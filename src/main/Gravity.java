@@ -4,17 +4,17 @@
  * */
 package main;
 
-// import java.util.Scanner;
-// uncomment the above line to use input in your program.
+import java.util.Scanner;
 
 public class Gravity {
-	// TODO 1: Create the main method
 	public static void main(String[] args) {
-		/* TODO 2:
-		 *   a. Declare all your necessary variables inside main method.
-		 *   b. Declare a constant for 'gravity', assume the value to be 9.8
-		 *   c. Calculate the result and print it to the screen.
-		 * */
+		Scanner Scanner = new Scanner(System.in);
+		System.out.println("please enter the value of t");
+		double t = Scanner.nextDouble();
+		double s = 9.8 * t;
+		double D = 0.5 * 9.8 * t * t;
+		System.out.print("The speed of object 6.0 after release is " + s);
+		System.out.print(" and the distance the object has travell in 6.0 after the relase is" + D);
+		Scanner.close();
 	}
-	// P.S: Refer to the README.md file for the problem statement, input & output.
 }
